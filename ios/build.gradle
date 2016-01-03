@@ -4,7 +4,7 @@ sourceCompatibility = '1.7'
 [compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
 
 ext {
-	mainClassName = "com.coredumpproject.game.IOSLauncher"
+	mainClassName = "com.coredumpproject.pdemo.IOSLauncher"
 }
 
 launchIPhoneSimulator.dependsOn build

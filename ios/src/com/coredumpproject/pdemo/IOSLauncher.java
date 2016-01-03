@@ -1,17 +1,17 @@
-package com.coredumpproject.game;
+package com.coredumpproject.pdemo;
 
 import org.robovm.apple.foundation.NSAutoreleasePool;
 import org.robovm.apple.uikit.UIApplication;
 
 import com.badlogic.gdx.backends.iosrobovm.IOSApplication;
 import com.badlogic.gdx.backends.iosrobovm.IOSApplicationConfiguration;
-import com.coredumpproject.game.LanceGame;
+import com.coredumpproject.pdemo.PlatformDemoGame;
 
 public class IOSLauncher extends IOSApplication.Delegate {
     @Override
     protected IOSApplication createApplication() {
         IOSApplicationConfiguration config = new IOSApplicationConfiguration();
-        return new IOSApplication(new LanceGame(), config);
+        return new IOSApplication(new PlatformDemoGame(), config);
     }
 
     public static void main(String[] argv) {

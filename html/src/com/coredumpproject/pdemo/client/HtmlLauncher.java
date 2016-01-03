@@ -1,9 +1,9 @@
-package com.coredumpproject.game.client;
+package com.coredumpproject.pdemo.client;
 
 import com.badlogic.gdx.ApplicationListener;
 import com.badlogic.gdx.backends.gwt.GwtApplication;
 import com.badlogic.gdx.backends.gwt.GwtApplicationConfiguration;
-import com.coredumpproject.game.LanceGame;
+import com.coredumpproject.pdemo.PlatformDemoGame;
 
 public class HtmlLauncher extends GwtApplication {
 
@@ -14,6 +14,6 @@ public class HtmlLauncher extends GwtApplication {
 
         @Override
         public ApplicationListener getApplicationListener () {
-                return new LanceGame();
+                return new PlatformDemoGame();
         }
 }

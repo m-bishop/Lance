@@ -1,16 +1,16 @@
-package com.coredumpproject.game.android;
+package com.coredumpproject.pdemo;
 
 import android.os.Bundle;
 
 import com.badlogic.gdx.backends.android.AndroidApplication;
 import com.badlogic.gdx.backends.android.AndroidApplicationConfiguration;
-import com.coredumpproject.game.LanceGame;
+import com.coredumpproject.pdemo.PlatformDemoGame;
 
 public class AndroidLauncher extends AndroidApplication {
 	@Override
 	protected void onCreate (Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		AndroidApplicationConfiguration config = new AndroidApplicationConfiguration();
-		initialize(new LanceGame(), config);
+		initialize(new PlatformDemoGame(), config);
 	}
 }
